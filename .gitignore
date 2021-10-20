@@ -1,0 +1,4 @@
+scripts/keys
+scripts/node_modules
+scripts/yarn-error.log
+program/target

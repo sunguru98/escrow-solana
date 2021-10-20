@@ -1,0 +1,26 @@
+{
+  "name": "escrow-normal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sundeep Charan Ramkumar <webdevdesign@sundeepcharan.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@solana/buffer-layout": "^3.0.0",
+    "@solana/spl-token": "^0.1.8",
+    "@solana/web3.js": "^1.29.2",
+    "bn.js": "^5.2.0",
+    "fs-extra": "^10.0.0"
+  },
+  "scripts": {
+    "store": "ts-node src/storeAddresses.ts",
+    "initescrow": "ts-node src/initializeEscrow.ts",
+    "exchange": "ts-node src/exchangeEscrow.ts",
+    "cancel": "ts-node src/cancelEscrow.ts",
+    "setup": "ts-node src/setup.ts"
+  }
+}
